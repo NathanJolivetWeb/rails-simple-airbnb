@@ -1,12 +1,1 @@
-<div class="container d-flex justify-content-center">
-  <div class="m-3 w-50">
-    <%= simple_form_for(@flat) do |f| %>
-      <%= f.input :name %>
-      <%= f.input :address %>
-      <%= f.input :description %>
-      <%= f.input :price_per_night %>
-      <%= f.input :number_of_guests %>
-      <%= f.submit class:'btn btn-primary'%>
-    <% end %>
-  </div>
-</div>
+<%= render "form", flat: @flat %>

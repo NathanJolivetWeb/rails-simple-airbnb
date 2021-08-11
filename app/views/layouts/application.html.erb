@@ -12,7 +12,9 @@
   <body>
 <nav class="navbar navbar-light bg-light">
   <div class="container-fluid">
-    <%= link_to "Simple Airbnb", flats_path, class: "navbar-brand"%>
+    <%= link_to flats_path, class: "navbar-brand" do %>
+    <p><i class="fas fa-home"></i> Simple Airbnb</p>
+    <% end %>
     <form class="d-flex">
       <%= link_to "Add Flat", new_flat_path, class: "m-2 btn btn-outline-primary"%>
     </form>
